@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Banner across the top of the page -->
+    <header>
+        <h1>ROCK, PAPER, SCISSORS</h1>
+    </header>
+    <!-- Game zone -->
+    <main>
+        <section id="game">
+            <form><!--="submission.html" method="get"-->
+                <fieldset>
+                    <legend>Choose one:</legend>
+                        <input type="radio" name="choice" id="rock" value="R">
+                        <label for="rock">Rock</label>
+                        <input type="radio" name="choice" id="paper" value="P">
+                        <label for="paper">Paper</label>
+                        <input type="radio" name="choice" id="scissors" value="S">
+                        <label for="scissors">Scissors</label>
+                </fieldset>
+            </form>
+
+            <div id="zone">
+                <div class="choice">
+                    <span>Your choice:</span>
+                    <div class="box" id="player">
+                    </div>
+                </div>
+                <div class="choice">
+                    <span>Opponent's choice:</span>
+                    <div class="box" id="computer">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
