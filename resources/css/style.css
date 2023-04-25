@@ -74,14 +74,12 @@ label:hover {
 
 label:active {
     color: #7e7111;
-    /* border: 1px solid #a0910b; */
     box-shadow: 0px 0px;
     margin-top: 5px;
 }
 
 input[type="radio"]:checked + label{
     color: #7e7111;
-    /* border: 1px solid #a0910b; */
     box-shadow: 0px 0px;
     margin-top: 5px;
 }
@@ -92,13 +90,33 @@ input[type="radio"]:checked + label:hover{
     margin-top: 5px;
 }
 
+button {
+    display: flex;
+    flex-wrap: wrap;
+    color: #641212;
+    background-color: #ee4646;
+    box-shadow: 0px 3px #9b2323;
+    padding: 5px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button:active {
+    color: #641212;
+    box-shadow: 0px 0px;
+    margin-top: 5px;
+}
+
 /* Play area */
 
 #zone {
     border: 8px solid #ee4646;
-    margin: auto;
-    width: 900px;
-    height: 400px;
+    margin: auto 225px;
+    width: auto;
+    height: auto;
 }
 
 #zone .choice {
@@ -107,10 +125,29 @@ input[type="radio"]:checked + label:hover{
 }
 
 #zone .choice .box {
-    border: 6px solid #000000;
+    border: 6px solid #000;
     border-radius: 12px;
     background-color: #fff;
     width: 300px;
     height: 300px;
     margin: 10px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerBox, #computerBox {
+    background-color: #fff;
+    padding: 15px;
+    visibility: hidden;
+}
+
+#playerBox.filled, #computerBox.filled {
+    border-radius: 15px;
+    color: #57340c;
+    background-color: #f09731;
+    visibility: visible;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
 }

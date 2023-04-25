@@ -8,6 +8,7 @@
     <title>Rock Paper Scissors</title>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <script src="./resources/scripts/script.js"></script>
 </head>
 
 <body>
@@ -18,15 +19,16 @@
     <!-- Game zone -->
     <main>
         <section id="game">
-            <form><!--="submission.html" method="get"-->
+            <form>
                 <fieldset>
                     <legend>Choose one:</legend>
-                        <input type="radio" name="choice" id="rock" value="R">
+                        <input type="radio" name="choice" id="rock" value="rock">
                         <label for="rock">Rock</label>
-                        <input type="radio" name="choice" id="paper" value="P">
+                        <input type="radio" name="choice" id="paper" value="paper">
                         <label for="paper">Paper</label>
-                        <input type="radio" name="choice" id="scissors" value="S">
+                        <input type="radio" name="choice" id="scissors" value="scissors">
                         <label for="scissors">Scissors</label>
+                        <button id="button" onclick="playGame(event)">Shoot!</button>
                 </fieldset>
             </form>
 
@@ -34,11 +36,13 @@
                 <div class="choice">
                     <span>Your choice:</span>
                     <div class="box" id="player">
+                        <p id="playerBox"></p>
                     </div>
                 </div>
                 <div class="choice">
                     <span>Opponent's choice:</span>
                     <div class="box" id="computer">
+                        <p id="computerBox"></p>
                     </div>
                 </div>
             </div>
