@@ -114,14 +114,46 @@ button:active {
 
 #zone {
     border: 8px solid #ee4646;
-    margin: auto 225px;
-    width: auto;
+    margin: auto;
+    width: 1000px;
     height: auto;
 }
 
+/* Victory message */
+
+#zone .result {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+#zone #outcome {
+    border-radius: 10px;
+    padding: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#zone #outcome.win {
+    background-color: #2dce35;
+    /* border: 2px solid #1e8b23 */
+}
+
+#zone #outcome.loss {
+    background-color: #ee4646;
+    /* border: 2px solid #922424 */
+}
+
+#zone #outcome.tie {
+    background-color: #f09731;
+    /* border: 2px solid #995f1e */
+}
+
+/* Player boxes */
+
 #zone .choice {
     display: inline-block;
-    margin: 25px auto;
+    margin: 25px 15px;
 }
 
 #zone .choice .box {
